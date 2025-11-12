@@ -1,0 +1,271 @@
+<!-- cart.html - Shopping Cart Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Step On future</title>
+  <link rel="stylesheet" href="shoping.css">
+  <script src="shoping.js"></script>
+ 
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Step 0n<span> future</span></div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="cart-icon">🛒
+          <span class="cart-count">3</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="page-title">
+      <h1>Your Shopping Cart</h1>
+      <p>Review your items and proceed to checkout</p>
+    </div>
+
+    <div class="cart-content">
+      <div class="cart-items">
+        <div class="cart-header">
+          <div>Product</div>
+          <div>Price</div>
+          <div>Quantity</div>
+          <div>Subtotal</div>
+          <div></div>
+        </div>
+        
+        <div class="cart-row">
+          <div class="product-info">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Air Max">
+            </div>
+            <div class="product-details">
+              <h3>Nike Air Max</h3>
+              <div class="product-meta">
+                <p>Color: Red | Size: 8.5</p>
+              </div>
+            </div>
+          </div>
+          <div class="unit-price">₹1129.99</div>
+          <div class="quantity">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <div class="subtotal">₹1129.99</div>
+          <button class="remove-btn">×</button>
+        </div>
+        
+        <div class="cart-row">
+          <div class="product-info">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86" alt="Adidas Originals">
+            </div>
+            <div class="product-details">
+              <h3>Adidas Originals</h3>
+              <div class="product-meta">
+                <p>Color: Black | Size: 9</p>
+              </div>
+            </div>
+          </div>
+          <div class="unit-price">₹999.99</div>
+          <div class="quantity">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <div class="subtotal">₹1099.99</div>
+          <button class="remove-btn">×</button>
+        </div>
+        
+        <div class="cart-row">
+          <div class="product-info">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772" alt="New Balance 574">
+            </div>
+            <div class="product-details">
+              <h3>New Balance 574</h3>
+              <div class="product-meta">
+                <p>Color: Blue | Size: 10</p>
+              </div>
+            </div>
+          </div>
+          <div class="unit-price">₹1089.99</div>
+          <div class="quantity">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <div class="subtotal">₹989.99</div>
+          <button class="remove-btn">×</button>
+        </div>
+      </div>
+      
+      <div class="cart-summary">
+        <h2 class="summary-title">Order Summary</h2>
+        <div class="summary-item">
+          <span>Subtotal</span>
+          <span>₹1319.97</span>
+        </div>
+        <div class="summary-item">
+          <span>Shipping</span>
+          <span>₹1000.00</span>
+        </div>
+        <div class="summary-item">
+          <span>Tax</span>
+          <span>₹1025.60</span>
+        </div>
+        
+        <div class="promo-code">
+          <h4>Promo Code</h4>
+          <div class="promo-input">
+            <input type="text" placeholder="Enter promo code">
+            <button>Apply</button>
+          </div>
+        </div>
+        
+        <div class="summary-total">
+          <span>Total</span>
+          <span>₹1345.57</span>
+        </div>
+        
+        <button class="checkout-btn">Proceed to Checkout</button>
+        <a href="index.html" class="continue-shopping">Continue Shopping</a>
+      </div>
+    </div>
+
+    <!-- You might also like section -->
+    <section class="related-products">
+      <h2 class="section-title">You Might Also Like</h2>
+      <div class="products">
+        <div class="product">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3" alt="Puma RS-X">
+            <div class="product-overlay">
+              <a href="#" class="btn">Quick View</a>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Puma RS-X</h3>
+            <div class="product-rating">★★★★★</div>
+            <div class="product-price">₹1119.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570" alt="Converse Chuck Taylor">
+            <div class="product-overlay">
+              <a href="#" class="btn">Quick View</a>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Converse Chuck Taylor</h3>
+            <div class="product-rating">★★★★★</div>
+            <div class="product-price">₹969.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Vans Old Skool">
+            <div class="product-overlay">
+              <a href="#" class="btn">Quick View</a>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Vans Old Skool</h3>
+            <div class="product-rating">★★★★☆</div>
+            <div class="product-price">₹979.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1" alt="Reebok Classic">
+            <div class="product-overlay">
+              <a href="#" class="btn">Quick View</a>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Reebok Classic</h3>
+            <div class="product-rating">★★★★☆</div>
+            <div class="product-price">₹1084.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Step On future</h3>
+          <p>Premium footwear for every occasion.</p>
+          <div class="social-links">
+            <a href="#">FB</a>
+            <a href="#">IG</a>
+            <a href="#">TW</a>
+            <a href="#">YT</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Men's Shoes</a></li>
+            <li><a href="#">Women's Shoes</a></li>
+            <li><a href="#">Kids' Shoes</a></li>
+            <li><a href="#">Sport Shoes</a></li>
+            <li><a href="#">Formal Shoes</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>123 Shoe Street, Fashion City</li>
+            <li>Phone: (+91) 11456-72890</li>
+            <li>Email: info@stepstyle.com</li>
+            <li>Hours: Mon-Fri 9am-6pm</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 Step On future. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
